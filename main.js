@@ -48,6 +48,7 @@ function addContact() {
   );
   saveContacts();
   displayContacts();
+  alert("Contact Added");
   console.log(contacts);
 }
 
@@ -57,6 +58,7 @@ function removeContact() {
     contacts.splice(index, 1);
     saveContacts();
     displayContacts();
+    alert("Contact Removed");
   } else {
     alert("Invalid number");
   }
