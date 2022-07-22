@@ -68,7 +68,7 @@ function displayByName() {
   let Nameprompt = prompt("Please Enter a Name");
   let divSTR = "";
   for (let i = 0; i < contacts.length; i++) {
-    if (contacts[i].contactName === Nameprompt) {
+    if (contacts[i].contactName.includes(Nameprompt)) {
       divSTR += contactHTML(contacts[i], i);
     }
   }
